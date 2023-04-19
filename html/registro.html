@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/loginregistro.css">
+    <title> Registro </title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div>
+            <a href="index.html">
+                PerifericGames
+            </a>
+            <nav>
+                
+                <div class="dropdown">
+                    <a href="#" class="conta">
+                        Conta
+                    </a>
+                    <div>
+                        <a href="login.html">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Login</p>
+                        </a>
+                        <a href="registro.html">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <p>Registro</p>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <div class="registro">
+                <h1>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Registro
+                </h1>
+                <form class="formulario">
+                    <div class="input-usuario">
+                        <label for="usuario"> Usuário: </label>
+                        <input type="text" id="usuario" placeholder="Usuário">
+                    </div>
+
+                    <div class="input-email">
+                        <label for="email"> E-mail: </label>
+                        <input type="email" id="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="input-cpf-erro">
+                        <label for="cpf"> CPF: </label>
+                        <input type="number" id="cpf" placeholder="CPF">
+                    </div>
+
+                    <div class="input-data">
+                        <label for="data"> Data de Nascimento: </label>
+                        <input type="date" id="data">
+                    </div>
+
+                    <div class="input-senha1-erro">
+                        <label for="senha1"> Senha: </label>
+                        <input type="password" id="senha1" placeholder="********">
+                    </div>
+
+                    <div class="input-senha2-erro">
+                        <label for="senha2"> Repetir Senha: </label>
+                        <input type="password" id="senha2" placeholder="********">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar" class="botao-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+
+    </footer>
+
+    <script src="../js/registro.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--fonte);
+}
+
+
+:root{
+    --cor-verde: #1dcf5d;
+    --fonte: 'Montserrat', sans-serif;
+    --cor-branco: #fff;
+    --cor-preto: black;
+    --cor-preto-claro: #1f2525;
+}
+
+/* Cabecalho - Início */
+
+.cabecalho{
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--cor-verde);
+    color: var(--cor-preto);
+}
+
+.cabecalho a{
+    color: var(--cor-preto);
+    font-size: 1.75rem;
+    transition: all 0.2s;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.cabecalho>div>a{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cabecalho a:hover{
+    transform: scale(1.1);
+}
+
+a.conta{
+    background: var(--cor-preto);
+    padding: 0.8rem 2rem;
+    text-align: center;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: var(--cor-verde);
+    font-weight: bold;
+}
+
+.dropdown{
+    height: 4rem;
+    overflow: hidden;
+    background: var(--cor-preto);
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.dropdown>div{
+    text-align: center;
+    padding: 2rem 0.5rem;
+    font-size: 2rem;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    display: flex;
+}
+
+div.dropdown-mostrar{
+    height: 13rem;
+}
+
+.dropdown>div a{
+    color: var(--cor-verde);
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cabecalho a span{
+    width: 0%;
+    height: 0.3rem;
+    background: var(--cor-preto);
+    border-radius: 1rem;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.cabecalho a:hover span{
+    width: 100%;
+}
+
+.cabecalho nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cabecalho>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cabecalho - Fim */
+
+/* Container - Início */
+
+.container{
+    width: 100%;
+    background: url('../images/code.png') fixed;
+    background-size: cover;
+}
+
+.container>div{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.container>div>div{
+    width: 90%;
+    min-height: 100vh;
+    padding: 2rem 0;
+    margin: 0 auto;
+    font-family: var(--fonte);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    color: var(--cor-branco);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home>a{
+    color: var(--cor-preto);
+    transition: .3s;
+    border-radius: 1rem;
+    font-size: 3rem;
+    background: var(--cor-verde);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    animation: crescer 1s infinite
+}
+
+@keyframes crescer{
+    0%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+
+
+
+
+/* Container - Fim */
+
+/* Rodapé - Início */
+
+.rodape{
+    width: 100%;
+    background: var(--cor-verde);
+}
+
+.rodape>div{
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Rodapé - Fim */
